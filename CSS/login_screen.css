@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* CSS Document */
+.bg_color_div{
+	min-height: 80vh;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background-color: #F6EDE2;
+}
+
+.wrap_div{
+	margin:0 auto;
+	max-width: 1200px;
+}
+
+.center_card_div{
+	
+	overflow: hidden;
+	height: 750px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow:  0px 8px 20px 0px #585858;
+}
+
+.center_card_left{
+	float: left;
+	width: 5%;
+	height: 100%;
+	background: white;
+}
+
+.center_card_heading{
+	
+	float: left;
+	width: 45%;
+	height: 100%;
+	background: #FFBC6B;
+}
+
+.title_text1{
+	font-size: 70px;
+	color: white;
+	font-family: "Arial";
+	text-align: center;
+	margin-top: 300px;
+	margin-bottom: 0px;
+}
+
+.subtitle_text1{
+	font-size: 22px;
+	color: white;
+	font-family: "Arial";
+	text-align: center;
+}
+
+.center_card_body{
+	
+	float: left;
+	width: 50%;
+	height: 100%;
+	
+}
+
+.center_card_body_part1{
+	width: 100%;
+	height: 30%;
+}
+
+.center_card_body_part1_1{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+
+.center_card_body_text1{
+	font-size: 50px;
+	font-family: "Arial";
+	margin: 0;
+	padding-top: 150px;
+	padding-left: 50px;
+	padding-bottom: 0px;
+}
+
+.center_card_body_part2{
+	width: 100%;
+	height: 40%;
+}
+
+.textfield_style{
+	padding-left: 20px;
+	align-content: center;
+	height: 60px;
+	width: 70%;
+	border-style: none;
+	background-color: #F3F3F3;
+	font-size: 24px;
+	border-radius: 5px;
+}
+
+.textfield_style:hover{
+	background-color: #E6DCDC;
+}
+
+input:focus{
+	outline: none;
+	background-color: #E6DCDC;
+}
+
+.textfield_padding1{
+	margin-top: 50px;
+	margin-left: 86px;
+}
+
+.textfield_padding2{
+	margin-top: 15px;
+	margin-left: 86px;
+}
+
+.checkbox_style{
+	float: left;
+	margin-top: 20px;
+	margin-left: 120px;
+	margin-right: 20px;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+	background: #F3F3F3;
+}
+
+.checkbox_text{
+	margin-left: 20px;
+	font-size: 16px;
+	font-family: "Arial";
+	color: #6C6C6C;
+}
+
+.center_card_body_part3{
+	width: 100%;
+	height: 30%;
+}
+
+.login_button_style{
+	height: 60px;
+	width: 74%;
+	margin-left: 86px;
+	margin-bottom: 20px;
+	background: #FFBC6B;
+	border-radius: 5px;
+	cursor: pointer;
+	align-content: center;
+	color: white;
+	font-size: 24px;
+	font-family: "Arial";
+	text-align: center;
+	border: none;
+}
+
+.login_button_style:hover{
+	background: #F0963D;
+}
+
+.register_div , .forgot_div{
+	width: 30%;
+	height: 10%;
+	padding-top: 10px;
+	vertical-align:center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.register_text{
+	font-family: "Arial";
+	font-weight: bold;
+	color: #4BA9F5;
+	cursor: pointer;
+}
+
+#forgetPasswordModel{
+	position: fixed;
+	margin: 0 auto;
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	vertical-align: center;
+	visibility: hidden;
+}
+
+#forgetPasswordModel.active{
+	visibility: visible;
+}
+
+.modal-content{
+	background-color: #F6EDE2;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid #888;
+	width: 30%;
+	height: 15%;
+	position: relative;
+}
+
+.close{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.email_textfield_style{
+	margin: 30px auto 0;
+	width: 70%;
+	height: 24px;
+}
+
+.submit_button{
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	background-color: #F6EDE2;
+	font-size: 18px;
+	color: #f7b924;
+    border-color: #f7b924;
+	cursor: pointer;
+}
+
+.submit_button:hover {
+	color: black;
+	background-color: #FFDFBA;
+}

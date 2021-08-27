@@ -1,0 +1,277 @@
+@charset "utf-8";
+/* CSS Document */
+.header{
+	height: 200px;
+	background-color: #FFBC6B;
+	position: relative;
+}
+
+.logo_image{
+	height: 150px;
+	width: 250px;
+	position: absolute;
+	left: 42%;
+}
+
+.profile_image{
+    cursor:pointer;
+    border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 55%;
+	left: 82%;
+}
+
+.login_button_style , .sign_in_button_style{
+	height: 15%;
+	width: 7%;
+	border-style:none;
+	background-color: #FFDFBA;
+	border-radius: 5px;
+}
+
+.login_button_position{
+	position: absolute;
+	top: 65%;
+	left: 78%;
+}
+
+.sign_in_button_position{
+	position: absolute;
+	top: 65%;
+	left: 87%;
+}
+
+.login_button_style:hover , .sign_in_button_style:hover{
+	border-style:none;
+	background-color: #F0963D;
+	cursor: pointer;
+}
+
+.nav{
+	margin: 0 auto;
+	width: 100%;
+	height: 30px;
+	padding: 0;
+	position: absolute;
+	top: 84%;
+	display: flex;
+  	justify-content: center;
+	background-color: #F6EDE2;
+	border-bottom:1px solid #343434;
+	border-top: 1px solid #343434;
+}
+
+.nav li{
+	float: left;
+	font-size: 16px;
+	font-family: "Arial";
+	list-style: none;
+	width: 120px;
+	height: 100%;
+	text-align: center;
+	line-height: 30px;
+	color: black;
+	cursor: pointer;
+	border-left: 1px solid #343434;
+	border-right: 1px solid #343434;
+	
+}
+
+.active , .nav li:hover{
+	background-color: #F0963D;
+}
+
+.body{
+	height: 600px;
+	background-color: #F6EDE2;
+	position: relative;
+	padding: 50px 200px;
+}
+
+.body_part1{
+	float: left;
+	width: 55%;
+	height: 100%;
+}
+
+.divider{
+	float: left;
+	width: 5%;
+	height: 100%;
+}
+
+.body_part2{
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+
+.body_part1_1, .body_part1_3, .body_part2_1, .body_part2_3{
+	height: 10%;
+	width: 100%;
+	position: relative;
+}
+
+.body_part1_1 h2{
+	margin: 0 0 0 10px;
+	font-size: 50px;
+	font-family: "Arial";
+	text-decoration: underline;
+}
+
+.body_part1_2,.body_part2_2{
+	height: 80%;
+	width: 100%;
+}
+
+.body_part1_2_1{
+	width: 100%;
+	height: 10%;
+}
+
+.body_part1_2_2{
+	width: 100%;
+	height: 50%;
+}
+
+.body_part1_2_3{
+	width: 100%;
+	height: 15%;
+	position: relative;
+}
+
+.body_part1_2_4{
+	width: 100%;
+	height: 25%;
+}
+
+.body_part1_2_1 h3{
+	margin: 0 0 0 10px;
+	font-size: 20px;
+	font-family: "Arial";
+	font-weight: normal;
+}
+
+.body_part1_2_2_1,.body_part1_2_4_1{
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+
+.body_part1_2_2_1 h3, .body_part1_2_4_1 h3{
+	font-size: 20px;
+	font-family: "Arial";
+	font-weight: normal;
+	margin: 0 10px 15px;
+	height: 36px;
+	padding-top: 10px;
+}
+
+.body_part1_2_2_2,.body_part1_2_4_2{
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+
+.body_part1_2_2_2 input,.body_part1_2_2_2 select, .body_part1_2_4_2 input{
+	padding:0 0 0 10px;
+	margin: 0 0 25px;
+	border-style: none;
+	width: 98%;
+	height: 36px;
+	font-size: 18px;
+	font-family: "Arial";
+}
+
+.body_part1_2_2_2 select{
+	width: 100%;
+	height: 36px;
+	font-size: 18px;
+	font-family: "Arial";
+}
+
+.body_part1_2_2_2 input:focus,.body_part1_2_2_2 select:focus, .body_part1_2_4_2 input{
+	outline: none;
+}
+
+.body_part2_2_1{
+	position: relative;
+	height: 85%;
+	width: 100%;
+}
+
+.body_part2_2_1 img{
+    border-radius:50%;
+	position: absolute;
+	left: 25%;
+	top: 25%;
+}
+
+.body_part2_2_2{
+	height: 15%;
+	width: 100%;
+}
+
+.body_part2_2_2 h3{
+	font-size: 18px;
+	font-family: "Arial";
+	margin: 0 0 20px;
+}
+
+.body_part1_3 input, .body_part2_3 input,.body_part1_2_3 input{
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	position: absolute;
+	left: 40%;
+	top: 30%;
+	background-color: #FFBC6B;
+	cursor: pointer;
+}
+
+.body_part1_3 input:hover, .body_part2_3 input:hover,.body_part1_2_3 input:hover{
+	background-color: #FFBC6B;
+	color: white;
+	border-color: white;
+}
+
+.footer{
+	height: 100px;
+	background-color: #6D4F26;
+	position: relative;
+}
+
+.footer p{
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	color: white;
+	font-size: 14px;
+}
+.footer a{
+	position: absolute;
+	top: 55%;
+	color: white;
+	font-size: 14px;
+}
+.fa-facebook {
+	position: absolute;
+	left: 40%;
+}
+
+.fa-instagram {
+	position: absolute;
+	left: 42%;
+}
+
+.fa-twitter {
+	position: absolute;
+	left: 44%;
+}
+
+.fa-youtube {
+	position: absolute;
+	left: 46%;
+}

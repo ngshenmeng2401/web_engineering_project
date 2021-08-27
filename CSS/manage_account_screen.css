@@ -1,0 +1,283 @@
+.header{
+	height: 200px;
+	background-color: #FFBC6B;
+	position: relative;
+}
+
+.logo_image{
+	height: 150px;
+	width: 250px;
+	position: absolute;
+	left: 42%;
+}
+
+.profile_image{
+    cursor:pointer;
+    border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 55%;
+	left: 82%;
+}
+
+.login_button_style , .sign_in_button_style{
+	height: 15%;
+	width: 7%;
+	border-style:none;
+	background-color: #FFDFBA;
+	border-radius: 5px;
+}
+
+.sign_in_button_position{
+	position: absolute;
+	top: 65%;
+	left: 87%;
+}
+
+.login_button_style:hover , .sign_in_button_style:hover{
+	border-style:none;
+	background-color: #F0963D;
+	cursor: pointer;
+}
+
+.nav{
+	margin: 0 auto;
+	width: 100%;
+	height: 30px;
+	padding: 0;
+	position: absolute;
+	top: 84%;
+	display: flex;
+  	justify-content: center;
+	background-color: #F6EDE2;
+	border-bottom:1px solid #343434;
+	border-top: 1px solid #343434;
+}
+
+.nav li{
+	float: left;
+	font-size: 16px;
+	font-family: "Arial";
+	list-style: none;
+	width: 120px;
+	height: 100%;
+	text-align: center;
+	line-height: 30px;
+	color: black;
+	cursor: pointer;
+	border-left: 1px solid #343434;
+	border-right: 1px solid #343434;
+	
+}
+
+.active , .nav li:hover{
+	background-color: #F0963D;
+}
+
+.body{
+	height: 1000px;
+	background-color: #F6EDE2;
+	position: relative;
+	padding: 50px 200px;
+}
+
+table{
+	padding:50px 0;
+}
+
+th{
+	
+	background-color: #FFBC6B;
+	border: 1px solid black;
+	color: white;
+	font-family: "Arial";
+}
+
+td{	
+	border: 1px solid black;
+	background-color: #FFDFBA;
+}
+
+td:hover {
+	background-color: #FFEAD1;
+}
+
+.block_animation:hover .fa-unlock-alt,
+.block_animation .fa-lock,
+.unblock_animation:hover .fa-lock,
+.unblock_animation .fa-unlock-alt,
+.delete_animation:hover .fa-trash,
+.delete_animation .fa-trash-o{
+    display: none;
+}
+
+.block_animation:hover .fa-lock,
+.unblock_animation:hover .fa-unlock-alt,
+.delete_animation:hover .fa-trash-o{
+    display: inline;
+}
+
+.block_button_dialog, .unblock_button_dialog, .delete_button_dialog{
+	font-size: 24px;
+	border-style:none;
+	background-color: #FFDFBA;
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+
+.block_button_dialog:hover, .unblock_button_dialog:hover, .delete_button_dialog:hover{
+	border-style:none;
+	background-color: #F0963D;
+	cursor: pointer;	
+}
+
+#blockUserModel,#unblockUserModel,#deleteUserModel{
+	position: fixed;
+	margin: 0 auto;
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	vertical-align: center;
+	visibility: hidden;
+}
+
+#blockUserModel.active, #unblockUserModel.active, #deleteUserModel.active{
+	visibility: visible;
+}
+
+.block-modal-content, .unblock-modal-content, .delete-modal-content {
+	background-color: #F6EDE2;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid #888;
+	width: 30%;
+	height: 15%;
+	position: relative;
+}
+
+.block-modal-content div, .unblock-modal-content div, .delete-modal-content div{
+	margin: 0 ;
+	position: absolute;
+	top: 55%;
+	left: 40%;
+}
+
+.block-modal-content h1, .unblock-modal-content h1, .delete-modal-content h1{
+	text-align: center;
+	font-family: "Arial";
+	font-size: 24px;
+	margin-top:30px;
+}
+
+.add_form_style{
+	padding: 20px 0 0 20px;
+	width: 95%;
+	height: 90%;
+	margin: 0;
+}
+
+.edit_textfield_style{
+
+	width: 70%;
+    height: 5%;
+    padding: .375rem .75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.block_button, .unblock_button, .delete_button{
+	background-color: #F6EDE2;
+	float: right;
+	font-size: 18px;
+	color: #f7b924;
+    border-color: #f7b924;
+	cursor: pointer;
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+}
+
+.block_button:hover, .unblock_button:hover, .delete_button:hover{
+	color: black;
+	background-color: #FFDFBA;
+}
+
+/* The Close Button */
+.close{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.pagination-right,
+.pagination-left{
+	color: #FFBC6B;
+}
+
+.pagination-right:hover,
+.pagination-left:hover{
+	color: #6D4F26;
+}
+
+.footer{
+	height: 100px;
+	background-color: #6D4F26;
+	position: relative;
+}
+
+.footer p{
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	color: white;
+	font-size: 14px;
+}
+.footer a{
+	position: absolute;
+	top: 55%;
+	color: white;
+	font-size: 14px;
+}
+.fa-facebook {
+	position: absolute;
+	left: 40%;
+}
+
+.fa-instagram {
+	position: absolute;
+	left: 42%;
+}
+
+.fa-twitter {
+	position: absolute;
+	left: 44%;
+}
+
+.fa-youtube {
+	position: absolute;
+	left: 46%;
+}

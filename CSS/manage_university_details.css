@@ -1,0 +1,458 @@
+@charset "utf-8";
+/* CSS Document */
+.header{
+	height: 200px;
+	background-color: #FFBC6B;
+	position: relative;
+}
+
+.logo_image{
+	height: 150px;
+	width: 250px;
+	position: absolute;
+	left: 42%;
+}
+
+.profile_image{
+    cursor:pointer;
+    border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 55%;
+	left: 82%;
+}
+
+.login_button_style , .sign_in_button_style{
+	height: 15%;
+	width: 7%;
+	border-style:none;
+	background-color: #FFDFBA;
+	border-radius: 5px;
+}
+
+.login_button_position{
+	position: absolute;
+	top: 65%;
+	left: 78%;
+}
+
+.sign_in_button_position{
+	position: absolute;
+	top: 65%;
+	left: 87%;
+}
+
+.login_button_style:hover , .sign_in_button_style:hover{
+	border-style:none;
+	background-color: #F0963D;
+	cursor: pointer;
+}
+
+.nav{
+	margin: 0 auto;
+	width: 100%;
+	height: 30px;
+	padding: 0;
+	position: absolute;
+	top: 84%;
+	display: flex;
+  	justify-content: center;
+	background-color: #F6EDE2;
+	border-bottom:1px solid #343434;
+	border-top: 1px solid #343434;
+}
+
+.nav li{
+	float: left;
+	font-size: 16px;
+	font-family: "Arial";
+	list-style: none;
+	width: 120px;
+	height: 100%;
+	text-align: center;
+	line-height: 30px;
+	color: black;
+	cursor: pointer;
+	border-left: 1px solid #343434;
+	border-right: 1px solid #343434;
+	
+}
+
+.active , .nav li:hover{
+	background-color: #F0963D;
+	
+}
+
+.body{
+	height: 1100px;
+	background-color: #F6EDE2;
+	position: relative;
+	padding: 50px 200px;
+}
+
+.edit_button_dialog {
+	font-weight: normal;
+	font-size: 30px;
+	border-style:none;
+	background-color: #F6EDE2;
+	height: 30px;
+	width: 30px;
+	float: right;
+}
+
+.edit_button_dialog:hover {
+	border-style:none;
+	background-color: #F0963D;
+	cursor: pointer;	
+}
+
+#editUniversityDetails1, #editUniversityDetails2, #editUniversityDetails3, #editUniversityDetails4{
+	position: fixed;
+	margin: 0 auto;
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	vertical-align: center;
+	visibility: hidden;
+}
+
+#editUniversityDetails1.active, #editUniversityDetails2.active, #editUniversityDetails3.active, #editUniversityDetails4.active{
+	visibility: visible;
+}
+
+.modal-content{
+	background-color: #F6EDE2;
+	margin: auto;
+	padding: 0 15px 50px 10px;
+	border: 1px solid #888;
+	width: 50%;
+}
+
+#editUniversityDetails1 .modal-content, #editUniversityDetails4 .modal-content{
+	margin-top: 100px;
+	height: 30%;
+} 
+#editUniversityDetails2 .modal-content{
+	height: 30%;
+} 
+#editUniversityDetails3 .modal-content{
+	margin-top: 150px;
+	height: 15%;
+}
+
+.checkbox_div{
+	padding-top: 30px;
+	margin-bottom: 30px;
+	height: 15%;
+	width: 100%;
+	display: inline-block;
+}
+
+.small_checkbox_div{
+	height: 100%;
+	width: 33%;
+	float: left;
+}
+
+.checkbox_container{
+	width: 100%;
+	height: 33%;
+	margin-bottom: 10px;
+	line-height: 30px;
+}
+
+.checkbox_label{
+	font-size: 18px;
+	font-family: "Arial";
+}
+
+.checkbox_style{
+	height: 15px;
+	width: 25px;
+	float: left;
+}
+
+.edit_label_style{
+	margin-bottom: 20px;
+	margin-left: 25px;
+	width: 30%;
+	height: 25px;
+	font-family: "Arial";
+	font-size: 18px;
+	text-align: left;
+	display:inline-block;
+}
+
+.edit_textfield_style{
+
+	width: 65%;
+    height: 30px;
+    font-size: 18px;
+    color: #495057;
+    background-color: #fff;
+    border-style:none;
+}
+
+.edit_location_style{
+    width: 65%;
+    height: 30px;
+    font-size: 18px;
+    color: #495057;
+    background-color: #fff;
+    border-style:none;
+    position:absolute;
+    left:15%;
+    top:82%;
+}
+
+.edit_textfield_style:focus{
+    outline:none;
+}
+
+.edit_button{
+	background-color: #F6EDE2;
+	float: right;
+	font-size: 18px;
+	color: #f7b924;
+    border-color: #f7b924;
+	cursor: pointer;
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+.edit_button:hover{
+	color: black;
+	background-color: #FFDFBA;
+	border-style: none;
+}
+
+/* The Close Button */
+.close{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.body_part1{
+	float: left;
+	height: 35%;
+	width: 100%;
+}
+
+.body_part2{
+	float: left;
+	height: 45%;
+	width: 100%;
+}
+
+.body_part3{
+	float: left;
+	height: 20%;
+	width: 100%;
+}
+
+.body_part1_1 , .body_part1_2 {
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+
+.body_part1_2_1{
+	height: 20%;
+	width: 100%;
+	position:relative;
+}
+
+.edit_img_btn_position{
+    position:absolute;
+    left:87%;
+    top:60%;
+}
+
+.body_part1_2_2{
+	height: 80%;
+	width: 100%;
+}
+
+.body_part1_2_2 h1{
+	text-align: center;
+	font-family: "Verdana";
+	font-size: 24px;
+	margin: 0 50px;
+}
+
+.body_part1_2_2 h2, .body_part1_2_2 h3{
+	text-align: center;
+	font-family: "Verdana";
+	font-weight: normal;
+	font-size: 16px;
+	margin: 40px 0 30px;
+}
+
+.body_part2_1{
+	float: left;
+	width: 50%;
+	height: 100%
+}
+
+.body_part2_2{
+	float: left;
+	width: 50%;
+	height: 100%;
+	position:relative;
+}
+
+.body_part2_1_1{
+	height: 10%;
+	width: 100%;
+}
+
+.body_part2_1_1 h1, .body_part2_2 h2, .body_part3_header h1{
+	font-size: 26px;
+	font-family: "Arial";
+	margin: 0;
+	width: 80%;
+	float: left;
+}
+
+.body_part2_2 img{
+	margin-top: 30px;
+}
+
+.body_part2_2 h3{
+	font-size: 20px;
+	font-family: "Arial";
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+.body_part2_1_2{
+	height: 90%;
+	width: 100%;
+}
+
+.body_part2_1_2_1{
+	float: left;
+	height: 90%;
+	width: 49%;
+}
+
+.body_part2_divider{
+	float: left;
+	background-color: black;
+	width: 1px;
+	height: 85%;
+	margin-right: 10px;
+}
+
+.body_part2_1_2_1_1, .body_part2_1_2_1_2{
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+
+.body_part2_1_2_1_2_1, .body_part2_1_2_1_2_2{
+	height: 100px;
+	width: 155px;
+}
+
+.body_part2_1_2_1_2_1 i{
+	margin-top: 10px;
+	font-size: 22px;
+}
+
+.body_part2_1_2_1_2_1 h3{
+	margin-bottom: 0;
+	font-size: 14px;
+	font-family: "Arial";
+}
+
+.body_part2_1_2_1_2_2 h3{
+	margin: 0;
+	font-size: 18px;
+	font-family: "Arial";
+	text-align: center;
+	padding-top:20px; 
+}
+
+.body_part3_header{
+/*	padding-top: 10px;*/
+	width: 100%;
+	height: 30px;
+}
+
+.body_part3_1, .body_part3_2, .body_part3_3{
+	float: left;
+	height: 190px;
+	width: 424px;
+	text-align: justify;
+	position:relative;
+}
+
+.body_part3_1 h2, .body_part3_2 h2, .body_part3_3 h2{
+	font-size: 16px;
+	margin: 50px 50px 0;
+	font-family: "Arial";
+	font-weight: normal;
+}
+
+.btn_4_position{
+    position:absolute;
+    left:81%;
+    top:80%;
+}
+
+.footer{
+	height: 100px;
+	background-color: #6D4F26;
+	position: relative;
+}
+
+.footer p{
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	color: white;
+	font-size: 14px;
+}
+.footer a{
+	position: absolute;
+	top: 55%;
+	color: white;
+	font-size: 14px;
+}
+.fa-facebook {
+	position: absolute;
+	left: 40%;
+}
+
+.fa-instagram {
+	position: absolute;
+	left: 42%;
+}
+
+.fa-twitter {
+	position: absolute;
+	left: 44%;
+}
+
+.fa-youtube {
+	position: absolute;
+	left: 46%;
+}
+
